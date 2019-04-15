@@ -24,7 +24,7 @@ body {
 
 
 .text-center {
-    text-align:center;
+    /* text-align:center; */
 }
 
 
@@ -106,7 +106,8 @@ background-color: #6A75F0;
 border: 1px solid #096FC0;
 color: #fff;
 font-weight: 900;
-font-size:16px;
+font-size:18px;
+text-align: center;
 }
     .offer-box a {
         color: #fff;
