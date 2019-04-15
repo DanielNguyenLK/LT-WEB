@@ -5802,8 +5802,85 @@ button.close {
   text-align: center;
 }
 
-
+/* /////////////////////////////// */
 .content{
   text-align: justify;
   font-size: 16px;
+}
+
+.card{
+  position: unset;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.card-header:first-child{
+  border-radius: calc(.25rem -1px)  calc(.25-1px) 0 0 ;
+}
+
+.card-header{
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  color: inherit;
+  background-color: rgba(0, 0, 0, .03);
+  border-bottom: 1px solid rgba(0,0,0, .125);
+}
+
+.card-body{
+  flex: 1 1 auto;
+  padding: 1.25 rem;
+}
+
+.media{
+  display: flex;
+  align-items: flex-start;
+}
+
+.d-flex{
+  display: flex!important;
+}
+
+.rounded-circle{
+  border-radius: 50%!important;
+}
+
+.mt-0{
+  margin-top: 0!important;
+}
+
+h5.media-body{
+  font-weight: 500;
+}
+
+p.media-body{
+  text-align: justify;
+}
+
+/* .upload-button-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+} */
+
+.button {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.upload-button-wrapper input[type=file] {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
