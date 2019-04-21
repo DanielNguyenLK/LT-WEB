@@ -266,3 +266,11 @@ background-color:#EB0429;
   th{
       text-align: center;
   }
+  .navbar-default {
+    position: fixed;
+    width: 100vw;
+    z-index: 1000
+  }
+  .container {
+      padding-top: 70px;
+  }
