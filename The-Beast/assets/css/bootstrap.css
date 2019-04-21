@@ -306,6 +306,9 @@ figure {
 }
 img {
   vertical-align: middle;
+  display: inline-block;
+  
+  
 }
 .img-responsive,
 .thumbnail > img,
@@ -314,7 +317,8 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
+  max-height: 160px;
+  min-height: auto;
 }
 .img-rounded {
   border-radius: 6px;
@@ -322,7 +326,8 @@ img {
 .img-thumbnail {
   display: inline-block;
   max-width: 100%;
-  height: auto;
+  max-height: 160px;
+  min-height: auto;
   padding: 4px;
   line-height: 1.42857143;
   background-color: #fff;
@@ -401,7 +406,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 h1 small,
@@ -451,7 +456,8 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 18px;
+  text-align: center;
 }
 h4,
 .h4 {
@@ -466,7 +472,7 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 .lead {
   margin-bottom: 20px;
@@ -493,7 +499,7 @@ cite {
   text-align: right;
 }
 .text-center {
-  text-align: center;
+  /* text-align: center; */
 }
 .text-justify {
   text-align: justify;
@@ -761,8 +767,8 @@ pre code {
   margin-left: auto;
 }
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
@@ -4406,6 +4412,8 @@ a.list-group-item.active > .badge,
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
+  height: 320px;
+  max-height: 320px;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -4421,8 +4429,9 @@ a.thumbnail.active {
   border-color: #428bca;
 }
 .thumbnail .caption {
-  padding: 9px;
-  color: #333;
+  padding: 5px;
+  /* color: #333; */
+  opacity: 0.8;
 }
 .alert {
   padding: 15px;
@@ -4587,6 +4596,10 @@ a.thumbnail.active {
 }
 .media-object {
   display: block;
+  max-width: 170px;
+  min-width: 170px;
+  max-height: 150px;
+  min-height: 150px; 
 }
 .media-heading {
   margin: 0 0 5px;
@@ -5779,3 +5792,95 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.img-main{
+  display: flex;
+  max-width: 60%;
+  min-width: 20%;
+  max-height: 20%;
+  min-height: 7%; 
+  text-align: center;
+}
+
+/* /////////////////////////////// */
+.content{
+  text-align: justify;
+  font-size: 16px;
+}
+
+.card{
+  position: unset;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.card-header:first-child{
+  border-radius: calc(.25rem -1px)  calc(.25-1px) 0 0 ;
+}
+
+.card-header{
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  color: inherit;
+  background-color: rgba(0, 0, 0, .03);
+  border-bottom: 1px solid rgba(0,0,0, .125);
+}
+
+.card-body{
+  flex: 1 1 auto;
+  padding: 1.25 rem;
+}
+
+.media{
+  display: flex;
+  align-items: flex-start;
+}
+
+.d-flex{
+  display: flex!important;
+}
+
+.rounded-circle{
+  border-radius: 50%!important;
+}
+
+.mt-0{
+  margin-top: 0!important;
+}
+
+h5.media-body{
+  font-weight: 500;
+}
+
+p.media-body{
+  text-align: justify;
+}
+
+/* .upload-button-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+} */
+
+.button {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.upload-button-wrapper input[type=file] {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
