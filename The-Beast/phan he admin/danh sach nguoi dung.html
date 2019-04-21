@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Bài viết đã được phê duyệt</title>
+    <title>Danh sách người dùng</title>
     <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <!-- Fontawesome core CSS -->
@@ -26,8 +26,7 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -45,14 +44,12 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tài khoản<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../phan he doc gia/cap-nhat-thong-tin-doc-gia.html"><strong>Phân hệ độc
-                                        giả</strong></a></li>
-                            <li><a href="cap-nhat-thong-tin-phong-vien.html"><strong>Phân hệ
+                            <li><a href="#"><strong>Phân hệ độc giả</strong></a></li>
+                            <li><a href="../phan he phong vien/cap-nhat-thong-tin-phong-vien.html"><strong>Phân hệ
                                         phóng viên</strong></a></li>
                             <li><a href="../phan he bien tap vien/cap-nhat-thong-tin-bien-tap-vien.html"><strong>Phân
                                         hệ biên tập viên</strong></a></li>
-                            <li><a href="../phan he admin/cap-nhat-thong-tin-admin.html"><strong>Phân hệ
-                                        administrator</strong></a></li>
+                            <li><a href="cap-nhat-thong-tin-admin.html"><strong>Phân hệ administrator</strong></a></li>
                             <li><a href="../cap-nhat-thong-tin.html"><strong>Cập nhật thông tin</strong></a></li>
                             <li><a href="../doi-mat-khau.html"><strong>Đổi mật khẩu</strong></a></li>
                             <li class="divider"></li>
@@ -65,7 +62,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="#"><strong>Điện thoại: </strong>033-353-8585</a></li>
                             <li><a href="#"><strong>eMail: </strong>thebeast@businessonline.com</a></li>
-                            <li><a href="./chinh-sach.html"><strong>Chính sách & điều luật </strong></a></li>
+                            <li><a href="../chinh-sach.html"><strong>Chính sách & điều luật </strong></a></li>
                             <li class="divider"></li>
                             <li><a href="#"><strong>Địa chỉ: </strong>
                                     <div>
@@ -104,11 +101,11 @@
                 <div>
                     <a href="#" class="list-group-item active list-group-item-success">Tài khoản</a>
                     <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="cap-nhat-thong-tin-bien-tap-vien.html">Thông tin cá nhân</a>
+                        <li class="list-group-item active">
+                            <a href="cap-nhat-thong-tin-admin.html">Thông tin cá nhân</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="thong-tin-tai-khoan-bien-tap-vien.html">Thông tin tài khoản</a>
+                            <a href="thong-tin-tai-khoan-admin.html">Thông tin tài khoản</a>
                         </li>
                         <li class="list-group-item">
                             <a href="../doi-mat-khau.html">Đổi mật khẩu</a>
@@ -119,43 +116,36 @@
                         <li class="list-group-item">
                             <a href="../dang-nhap.html">Đăng xuất</a>
                         </li>
+
                     </ul>
                 </div>
                 <!-- /.div -->
 
                 <div>
-                    <a href="#" class="list-group-item active">Bài viết</a>
+                    <a href="#" class="list-group-item active">Quản lý</a>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <a href="bai viet chua duoc btv duyet.html">Chưa được duyệt</a>
-                            <span class="label label-primary pull-right">4</span>
+                            <a href="#">Danh sách người dùng</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="#">Đã được phê duyệt</a>
-                            <span class="label label-primary pull-right">6</span>
+                            <a href="chuyen muc.html">Chuyên mục</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="bai viet da bi btv tu choi.html">Đã từ chối</a>
-                            <span class="label label-primary pull-right">3</span>
+                            <a href="danh sach bai viet.html">Bài viết</a>
                         </li>
                     </ul>
                 </div>
+                <!-- /.div -->
             </div>
             <!-- /.col -->
 
             <div class="col-md-9">
                 <!-- /.div -->
                 <div class="row">
-                    <!-- <div>
-                    <ol class="breadcrumb">
-                        <li><a href="#">Trang chủ</a></li>
-                        <li class="active">Nông Sản</li>
-                    </ol>
-                </div> -->
                     <!-- /.div -->
                     <div class="row">
                         <div class="btn-group alg-left-pad">
-                            <button type="button" class="btn btn-default">Bài viết đã được phê duyệt</button>
+                            <button type="button" class="btn btn-default">Bài viết đã xem</button>
                             <button type="button" class="btn btn-default"><strong>6 </strong>Bài viết</button>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
@@ -203,138 +193,128 @@
                                         <li>|</li>
                                         <span><i class="glyphicon glyphicon-th-list"></i>Kinh doanh</span>
                                         <li>|</li>
-                                        <span><i class="glyphicon glyphicon-tag"></i><a href="#"
-                                                style="color: black;">Nông
+                                        <span><i class="glyphicon glyphicon-tag"></i><a href="#" style="color: black;">Nông
                                                 sản</a></span>
+                                        <li>|</li>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 1.305</span>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                         <div class="well">
-                            <div class="media">
-                                <a class="pull-left" href="#">
-                                    <img class="media-object" src="../assets/img/The-thao-hinh-1.jpg">
-                                </a>
-                                <div class="media-body">
-                                    <h4 class="media-heading"><a href="#">Juventus bị loại cúp C1: 300 triệu bảng mua
-                                            Cristiano Ronaldo để làm gì?</h4></a>
-                                    <!-- <p class="text-right">By Francisco</p> -->
-                                    <p>Cristiano Ronaldo đã ghi 2 bàn ở cả lượt đi và về trước Ajax tại tứ kết Champions
-                                        League. Tuy nhiên, chừng đó vẫn là không đủ để “Lão phu nhân” đi tiếp.
-
-                                        Cơn thịnh nộ đến như một điều tất yếu, người hâm mộ lại đang phán xét Juventus
-                                        về số tiền 300 triệu bảng để đưa về siêu sao người Bồ Đào Nha.</p>
-                                    <ul class="list-inline list-unstyled">
-                                        <li><span><i class="glyphicon glyphicon-calendar"></i> 2018-02-10 </span></li>
-                                        <li>|</li>
-                                        <span><i class="glyphicon glyphicon-th-list"></i>Thể thao</span>
-                                        <li>|</li>
-                                        <span><i class="glyphicon glyphicon-tag"></i><a href="#"
-                                                style="color: black;">Quốc tế
-                                            </a></span>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="well">
-                            <div class="media">
-                                <a class="pull-left" href="#">
-                                    <img class="media-object" src="../assets/img/TL-hinh-6.png">
-                                </a>
-                                <div class="media-body">
-                                    <h4 class="media-heading"><a href="#">Những tỷ phú "chân đất" nhờ trồng thanh long
-                                    </h4>
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="../assets/img/cua-hd-hinh-1.png">
                                     </a>
-                                    <!-- <p class="text-right">By Francisco</p> -->
-                                    <p>Từ một xã nghèo cái ăn không đủ, người dân phải bỏ quê đi tha phương cầu thực thì
-                                        đến nay xã Tân Thuận, huyện Hàm Thuận Nam, Bình Thuận đang là nơi có nhiều tỷ
-                                        phú
-                                        nhờ trồng cây thanh long .
-                                        Xã Tân Thuận cách trung tâm huyện Hàm Thuận Nam chừng 5km theo đường chim bay.
-                                        Nép
-                                        mình sau núi Tà Cú, làng quê này xen giữa những cánh đồng thanh long bạt ngàn
-                                        với
-                                        những nóc nhà xanh đỏ hiện đại. Ngay khi bước chân vào đầu thôn Hiệp Nghĩa,
-                                        chúng
-                                        tôi bị choáng ngợp bởi những căn nhà mái Thái, những ngôi biệt thự đồ sộ lộng
-                                        lẫy
-                                        nằm dọc đường vào trung tâm xã.</p>
-                                    <ul class="list-inline list-unstyled">
-                                        <li><span><i class="glyphicon glyphicon-calendar"></i> 2018-09-20 </span></li>
-                                        <li>|</li>
-                                        <span><i class="glyphicon glyphicon-th-list"></i>Kinh doanh</span>
-                                        <li>|</li>
-                                        <span><i class="glyphicon glyphicon-tag"></i><a href="#"
-                                                style="color: black;">Nông
-                                                sản</a></span>
-                                    </ul>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Vì sao cua huỳnh đế bán gần 10 triệu đồng/con?
+                                        </h4></a>
+                                        <!-- <p class="text-right">By Francisco</p> -->
+                                        <p>Nếu phải lựa chọn ra danh sách những món hải sản đắt đỏ nhất, cua hoàng đế (có nơi
+                                            gọi là huỳnh đế) chắc chắn phải có một chỗ trong đó, thậm chí nằm trên top đầu.
+                                            Cua huỳnh đế là gì và cua hoàng đế bổ dưỡng ra sao mà cực đắt. Được biết đến là một
+                                            loại hải sản thơm ngon, cua hoàng đế có hình dạng lạ mắt, chắc thịt dù hơn 1
+                                            triệu/kg nhưng vẫn được mọi người ưa chuộng và tìm mua.</p>
+                                        <ul class="list-inline list-unstyled">
+                                            <li><span><i class="glyphicon glyphicon-calendar"></i> 2018-7-30 </span></li>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-th-list"></i>Kinh doanh</span>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-tag"></i><a href="#" style="color: black;">Hải
+                                                    sản</a></span>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-eye-open"></i> 1.305</span>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
                         <div class="well">
-                            <div class="media">
-                                <a class="pull-left" href="#">
-                                    <img class="media-object" src="../assets/img/vai-hinh-6.png">
-                                </a>
-                                <div class="media-body">
-                                    <h4 class="media-heading"><a href="#">Mùa đông ấm, vải thiều lại 'tịt hoa'</h4></a>
-                                    <!-- <p class="text-right">By Francisco</p> -->
-                                    <p>Diễn biến thời tiết mùa đông 2018-2019 ấm hơn mọi năm khiến nhiều diện tích vải
-                                        thiều tại các vựa lớn như Bắc Giang, Hải Dương có tỉ lệ ra hoa thấp. Hiện tượng
-                                        vải
-                                        thiều mất mùa do “tịt hoa” này lại diễn ra tương tự như niên vụ năm 2016-2017.
-                                    </p>
-                                    <ul class="list-inline list-unstyled">
-                                        <li><span><i class="glyphicon glyphicon-calendar"></i> 2017-02-04 </span></li>
-                                        <li>|</li>
-                                        <span><i class="glyphicon glyphicon-th-list"></i>Kinh doanh</span>
-                                        <li>|</li>
-                                        <span><i class="glyphicon glyphicon-tag"></i><a href="#"
-                                                style="color: black;">Nông
-                                                sản</a></span>
-                                    </ul>
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="../assets/img/cua-ca-mau-hinh-4.png">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Giá cua biển Cà Mau tăng mạnh</h4></a>
+                                        <!-- <p class="text-right">By Francisco</p> -->
+                                        <p>Ghi nhận của PV Báo NNVN tại huyện Cái Nước (Cà Mau), ở thời điểm hiện tại cua gạch,
+                                            cua cốm (cua lột) có giá dao động từ 550 – 600 ngàn đồng/kg, tăng từ 120 – 150 ngàn
+                                            đồng/kg so với tháng trước; cua y có giá khoảng 350 – 370 ngàn đồng/kg; cua xô
+                                            khoảng 100 ngàn đồng/kg.</p>
+                                        <ul class="list-inline list-unstyled">
+                                            <li><span><i class="glyphicon glyphicon-calendar"></i> 2019-01-29 </span></li>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-th-list"></i><a href="#" style="color: black;"></a>Kinh doanh</span>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-tag"></i><a href="#" style="color: black;">Hải
+                                                    sản</a></span>
+                                            <li>|</li>
+                                            <span><i class="glyphicon glyphicon-eye-open"></i> 1.405</span>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+        
+                            <div class="well">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="../assets/img/The-thao-hinh-1.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a href="#">Juventus bị loại cúp C1: 300 triệu bảng mua Cristiano Ronaldo để làm gì?</h4></a>
+                                            <!-- <p class="text-right">By Francisco</p> -->
+                                            <p>Cristiano Ronaldo đã ghi 2 bàn ở cả lượt đi và về trước Ajax tại tứ kết Champions League. Tuy nhiên, chừng đó vẫn là không đủ để “Lão phu nhân” đi tiếp.
+            
+                                                Cơn thịnh nộ đến như một điều tất yếu, người hâm mộ lại đang phán xét Juventus về số tiền 300 triệu bảng để đưa về siêu sao người Bồ Đào Nha.</p>
+                                            <ul class="list-inline list-unstyled">
+                                                <li><span><i class="glyphicon glyphicon-calendar"></i> 2018-02-10 </span></li>
+                                                <li>|</li>
+                                                <span><i class="glyphicon glyphicon-th-list"></i>Thể thao</span>
+                                                <li>|</li>
+                                                <span><i class="glyphicon glyphicon-tag"></i><a href="#" style="color: black;">Quốc tế
+                                                        </a></span>
+                                                <li>|</li>
+                                                <span><i class="glyphicon glyphicon-eye-open"></i> 1.201</span>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div class="well">
-                            <div class="media">
-                                <a class="pull-left" href="#">
-                                    <img class="media-object" src="../assets/img/_mg_0787.1.jpg">
-                                </a>
-                                <div class="media-body">
-                                    <h4 class="media-heading"><a href="#">Kinh doanh cá chép bận rộn trước 23 Tháng Chạp
-                                    </h4></a>
-                                    <!-- <p class="text-right">By Francisco</p> -->
-                                    <p>Sắp tới ngày ông Công ông Táo (23 Tháng Chạp), trong các cửa hàng cá cảnh, các
-                                        chủ
-                                        cửa hàng đang tất bật chuẩn bị cá chép để bán. Nhìn chung, các loại cá chép để
-                                        phóng sinh được nuôi bán khá nhiều, giá rẻ như: Cá chép Tam Dương, cá chép vảy
-                                        rồng, cá chép hoa… Trong đó, một số người bán hàng cho biết, cá chép đỏ Tam
-                                        Dương
-                                        được nhiều người tiêu dùng mua nhất vì giá thành tương đối rẻ, khoảng 30.000 -
-                                        50.000 đồng/ đôi, màu sắc vàng tươi sáng.</p>
-                                    <ul class="list-inline list-unstyled">
-                                        <li><span><i class="glyphicon glyphicon-calendar"></i> 2017-02-06 </span></li>
-                                        <li>|</li>
-                                        <span><i class="glyphicon glyphicon-th-list"></i>Kinh doanh</span>
-                                        <li>|</li>
-                                        <span><i class="glyphicon glyphicon-tag"></i><a href="#"
-                                                style="color: black;">Hải
-                                                sản</a></span>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                                <div class="well">
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object"
+                                                    src="../assets/img/The-theo-hinh-8.jpg">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">MU - Solskjaer "thanh trừng": Bất ngờ bán Lukaku, siêu sao nào thế chỗ?</h4></a>
+                                                <!-- <p class="text-right">By Francisco</p> -->
+                                                <p>
+                                                    Một thông tin đầy giật gân vừa được tờ Telegraph đăng tải. 
+                                                    Theo nguồn tin riêng của tờ báo này, MU sẵn sàng lắng nghe mọi đề nghị dành cho Romelu Lukaku.
+                                                     Thậm chí, đội chủ sân Old Trafford quyết tâm bán đứt Lukaku ngay trong phiên chợ mùa hè 2019, 
+                                                     để qua đó tái đầu tư vào các thương vụ phù hợp với triết lý của HLV Solskjaer.
+                
+                                                </p>
+                                                <ul class="list-inline list-unstyled">
+                                                    <li><span><i class="glyphicon glyphicon-calendar"></i> 2018-12-10 </span></li>
+                                                    <li>|</li>
+                                                    <span><i class="glyphicon glyphicon-th-list"></i>Thể thao</span>
+                                                    <li>|</li>
+                                                    <span><i class="glyphicon glyphicon-tag"></i><a href="#" style="color: black;">Quốc
+                                                            tế</a></span>
+                                                    <li>|</li>
+                                                    <span><i class="glyphicon glyphicon-eye-open"></i> 300</span>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
 
                         <div class="row">
                             <ul class="pagination alg-right-pad active">
                                 <li><a href="#">&laquo;</a></li>
-                                <li><a href="#">1</a></li>
+                                <li><a href="#" >1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">&raquo;</a></li>
                             </ul>

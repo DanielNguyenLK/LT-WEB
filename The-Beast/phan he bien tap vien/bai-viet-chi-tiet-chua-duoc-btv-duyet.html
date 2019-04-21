@@ -19,78 +19,6 @@
     <link href="../assets/css/style.css" rel="stylesheet" />
     <!-- define css here. new create file -->
     <link href="../assets/css/define-style.css" rel="stylesheet" />
-
-    <style>
-        /* The Modal (background) */
-            .modal {
-              display: none; /* Hidden by default */
-              position: fixed; /* Stay in place */
-              z-index: 1; /* Sit on top */
-              padding-top: 100px; /* Location of the box */
-              left: 0;
-              top: 0;
-              width: 100%; /* Full width */
-              height: 100%; /* Full height */
-              overflow: auto; /* Enable scroll if needed */
-              background-color: rgb(0,0,0); /* Fallback color */
-              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            }
-            
-            /* Modal Content */
-            .modal-content {
-              position: relative;
-              background-color: #fefefe;
-              margin: auto;
-              padding: 0;
-              border: 1px solid #888;
-              width: 80%;
-              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-              -webkit-animation-name: animatetop;
-              -webkit-animation-duration: 0.4s;
-              animation-name: animatetop;
-              animation-duration: 0.4s
-            }
-            
-            /* Add Animation */
-            @-webkit-keyframes animatetop {
-              from {top:-300px; opacity:0} 
-              to {top:0; opacity:1}
-            }
-            
-            @keyframes animatetop {
-              from {top:-300px; opacity:0}
-              to {top:0; opacity:1}
-            }
-            
-            /* The Close Button */
-            .close {
-              color: white;
-              float: right;
-              font-size: 28px;
-              font-weight: bold;
-            }
-            
-            .close:hover,
-            .close:focus {
-              color: #000;
-              text-decoration: none;
-              cursor: pointer;
-            }
-            
-            .modal-header {
-              padding: 2px 16px;
-              background-color: #5cb85c;
-              color: white;
-            }
-            
-            .modal-body {padding: 2px 16px;}
-            
-            .modal-footer {
-              padding: 2px 16px;
-              background-color: #5cb85c;
-              color: white;
-            }
-            </style>
 </head>
 
 <body>
@@ -172,11 +100,11 @@
                 <div>
                     <a href="#" class="list-group-item active list-group-item-success">Tài khoản</a>
                     <ul class="list-group">
-                        <li class="list-group-item active">
-                            <a href="cap-nhat-thong-tin-phong-vien.html">Thông tin cá nhân</a>
+                        <li class="list-group-item">
+                            <a href="cap-nhat-thong-tin-bien-tap-vien.html">Thông tin cá nhân</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="thong-tin-tai-khoan-phong-vien.html">Thông tin tài khoản</a>
+                            <a href="thong-tin-tai-khoan-bien-tap-vien.html">Thông tin tài khoản</a>
                         </li>
                         <li class="list-group-item">
                             <a href="../doi-mat-khau.html">Đổi mật khẩu</a>
@@ -187,7 +115,6 @@
                         <li class="list-group-item">
                             <a href="../dang-nhap.html">Đăng xuất</a>
                         </li>
-
                     </ul>
                 </div>
                 <!-- /.div -->
@@ -267,27 +194,54 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-11 col-sm-11">
-                            <button type="button" class="change-info" data-toggle="collapse" data-target="#change">Phê duyệt</a></button>
-                            <button type="button" class="btn btn-primary" id="btnTuChoi">Từ chối</a></button>
-                            <!-- <p><button class="change-info" data-toggle="collapse" data-target="#change">Thay đổi thông tin</button></p> -->
+                            <!-- <button type="button" class="change-info" data-toggle="collapse" data-target="#change">Phê duyệt</a></button> -->
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#TuChoi">Từ chối</a></button>
+                            <button class="btn btn-success" data-toggle="collapse" data-target="#PheDuyet">Phê duyệt</button>
 
-                            <div id="change" class="collapse form-group input-login">
-                                <h2>Thay đổi thông tin</h2>
-                                <div class="input-group">
-                                    <label>Chuyên Mục:</label><br>
-                                    <input type="text" class="form-control" id="fullname-change" value="Kinh doanh"
-                                        required="required">
-                                </div>
-                                <div class="input-group">
-                                    <label>Nhãn:</label><br>
-                                    <input type="text" class="form-control" id="address-change" value="Nông nghiệp"
-                                        required="required">
-                                </div>
-                                <div class="input-group">
-                                    <span><label>Ngày đăng bài:</label></span>
-                                    <input type="datetime" class="form-control" id="email-change" value="2019-04-05"
-                                        required="required">
-                                </div>
+                            <div id="PheDuyet" class="collapse form-group">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <label>Chuyên mục</label>
+                                                <input type="text" class="form-control" required="required" placeholder="Tên chuyên mục">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <label>Tag</label>
+                                                <input type="text" class="form-control" required="required" placeholder="gán nhãn">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>Ngày xuất bản</label>
+                                                <input type="datetime" class="form-control" required="required"
+                                                    placeholder="dd/MM/yyyy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Hoàn tất</button>
+                            </div>
+
+                            <div id="TuChoi" class="collapse form-group">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>Lý do từ chối</label>
+                                                <div class="form-group">
+                                                    <textarea name="message" id="message" required="required" class="form-control"
+                                                        rows="7" placeholder="Lý do từ chối bài viết"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                                 <br>
                                 <button type="submit" class="btn btn-primary">Hoàn tất</button>
                             </div>
@@ -378,12 +332,12 @@
     <!-- /.col -->
     <!--Footer end -->
     <!--Core JavaScript file  -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="../assets/js/jquery-1.10.2.js"></script>
     <!--bootstrap JavaScript file  -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
     <!--Slider JavaScript file  -->
-    <script src="assets/ItemSlider/js/modernizr.custom.63321.js"></script>
-    <script src="assets/ItemSlider/js/jquery.catslider.js"></script>
+    <script src="../assets/ItemSlider/js/modernizr.custom.63321.js"></script>
+    <script src="../assets/ItemSlider/js/jquery.catslider.js"></script>
     <script>
         $(function () {
 
