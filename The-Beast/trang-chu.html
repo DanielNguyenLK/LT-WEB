@@ -14,11 +14,12 @@
     <!--GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!--Slide Show Css -->
-    <link href="assets/ItemSlider/css/main-style.css" rel="stylesheet" />
+    <!-- <link href="assets/ItemSlider/css/main-style.css" rel="stylesheet" /> -->
     <!-- custom CSS here -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="prefetch" href="assets/img/cao-su.png">
     <!-- define css here. new create file -->
-    <link href="assets/css/define-style.css" rel="stylesheet" />
+    <!-- <link href="assets/css/define-style.css" rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -84,8 +85,16 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="well well-lg offer-box text-center">
-                Liên hệ quảng cáo: 033-353-8585
+            <div class="well well-lg offer-box text-center banner" id="slide-banner">
+                <button class="banner-button display-left" onclick="preImage()" >&#10094;</button>
+                <div class="content-banner">
+                <div class="text-banner">
+                    <h2 id="header-banner"></h2>
+                    <p id="text-display"></p>
+                </div>
+                <a class="more-info">Xem thêm &#10095;&#10095;</a>
+                </div>
+                <button class="banner-button display-right" onclick="nextImage()">&#10095;</button>
             </div>
             <br />
             <!-- /.col -->
@@ -1290,14 +1299,11 @@
         <script src="assets/js/jquery-1.10.2.js"></script>
         <!--bootstrap JavaScript file  -->
         <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/effect.js"></script>
         <!--Slider JavaScript file  -->
-        <script src="assets/ItemSlider/js/modernizr.custom.63321.js"></script>
-        <script src="assets/ItemSlider/js/jquery.catslider.js"></script>
-        <script>
-            $(function () {
-                $('#mi-slider').catslider();
-            });
-        </script>
+        <!-- <script src="assets/ItemSlider/js/modernizr.custom.63321.js"></script> -->
+        <!-- <script src="assets/ItemSlider/js/jquery.catslider.js"></script> -->
+
 </body>
 
 </html>

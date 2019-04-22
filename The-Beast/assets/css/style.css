@@ -274,3 +274,64 @@ background-color:#EB0429;
   .container {
       padding-top: 70px;
   }
+  .banner {
+    background-repeat: no-repeat;
+    height: 370px;
+    background-size: cover;
+    overflow: hidden;
+  }
+.banner-button {
+    height: 100px;
+    width: 60px;
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    color:#fff;
+    background-color:#00000087
+}
+.display-left {
+    position: relative;
+    top: 50%;
+    left: -45%;
+    transform: translate(0%,-50%);
+}
+.display-right {
+    position: relative;
+    top: 50%;
+    left: 45%;
+    transform: translate(0%,-50%);
+}
+.banner-button:hover {
+    color:#000!important;
+    background-color:#f5f5f58f!important;
+}
+.content-banner {
+    position: absolute;
+    top: 255px;
+    left: calc(50% - 275px);
+    width: 550px;
+    height: 180px;
+    background: #00000087
+}
+.text-banner {
+    color: white;
+    width: 100%;
+    height: 155px;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.more-info {
+    float: right;
+    padding-right: 15px;
+}
+.more-info:hover {
+    color: aqua !important;
+}
