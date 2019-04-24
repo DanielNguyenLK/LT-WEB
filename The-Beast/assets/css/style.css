@@ -279,6 +279,7 @@ background-color:#EB0429;
     height: 370px;
     background-size: cover;
     overflow: hidden;
+    background-color: white;
   }
 .banner-button {
     height: 100px;
@@ -331,6 +332,7 @@ background-color:#EB0429;
 .more-info {
     float: right;
     padding-right: 15px;
+    cursor: pointer;
 }
 .more-info:hover {
     color: aqua !important;
