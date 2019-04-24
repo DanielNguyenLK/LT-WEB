@@ -337,3 +337,9 @@ background-color:#EB0429;
 .more-info:hover {
     color: aqua !important;
 }
+.input-group{
+    margin-bottom: 20px;
+}
+.footer-banner {
+    margin-top: 50px;
+}

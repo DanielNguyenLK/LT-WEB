@@ -19,6 +19,7 @@
     <link href="../assets/css/style.css" rel="stylesheet" />
     <!-- define css here. new create file -->
     <link href="../assets/css/define-style.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -149,45 +150,67 @@
             <div class="col-md-9">
                 <!--div change info-->
                 <div>
-                    <div class="card">
-                        <img src="../assets/img/profile.png" alt="avatar" style="width:100%">
-                        <h1><Strong>Nguyễn Khánh Hòa</Strong></h1>
-                        <h3><Strong>Biên tập viên</Strong></h3>
-                        <p>Ngày sinh: 04-05-1997</p>
-                        <p>Số điện thoại: 111111111111</p>
-                        <p>Email: thebeast@businessonline.com</p>
-                        <p><button class="change-info" data-toggle="collapse" data-target="#change">Thay đổi thông tin</button></p>
+                    <!-- Quản lý bài viêt -->
+                    <div>
+                            <h2>Quản lý bài viết của bạn</h2> <hr>
+                            <div class="table100 ver3">
+                                    <table data-vertable="ver3">
+                                        <thead>
+                                            <tr class="row100 head">
+                                                <th class="column100 column1" data-column="column1">Title</th>
+                                                <th class="column100 column2" data-column="column2">Tag</th>
+                                                <th class="column100 column3" data-column="column3">Author</th>
+                                                <th class="column100 column4" data-column="column4">Date</th>
+                                                <th class="column100 column5" data-column="column5">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="row100" id="row1">
+                                                <td class="column100 column1" data-column="column1">Dak Lak cần nâng cao giá trị hạt cafe</td>
+                                                <td class="column100 column2" data-column="column2">Kinh doanh, Nông sản</td>
+                                                <td class="column100 column3" data-column="column3">Khanh Nguyen</td>
+                                                <td class="column100 column4" data-column="column4">2019-01-08</td>
+                                                <td class="column100 column5" data-column="column5">
+                                                    <a> Edit </a>
+                                                    |
+                                                    <a> Details </a>
+                                                    |
+                                                    <a  onclick="onRowClickDelete('row1')"> Delete </a>
+                                                </td>
+                                            </tr>
+                
+                                            <tr class="row100" id="row2">
+                                                <td class="column100 column1" data-column="column1">Giá cao su xuất khẩu vẫn ở mức thấp</td>
+                                                <td class="column100 column2" data-column="column2">Kinh doanh, Nông sản</td>
+                                                <td class="column100 column3" data-column="column3">Khanh Nguyen</td>
+                                                <td class="column100 column4" data-column="column4">2019-04-10</td>
+                                                <td class="column100 column5" data-column="column5">
+                                                    <a> Edit </a>
+                                                    |
+                                                    <a> Details </a>
+                                                    |
+                                                    <a onclick="onRowClickDelete('row2')"> Delete </a>
+                                                </td>
+                                            </tr>
+                
+                                            <tr class="row100" id="row3">
+                                                <td class="column100 column1" data-column="column1">Vì sao cua huỳnh đế bán gần 10 triệu đồng/con?</td>
+                                                <td class="column100 column2" data-column="column2">Kinh doanh, Hải sản</td>
+                                                <td class="column100 column3" data-column="column3">Khanh Nguyen</td>
+                                                <td class="column100 column4" data-column="column4">2018-7-30</td>
+                                                <td class="column100 column5" data-column="column5">
+                                                    <a> Edit </a>
+                                                    |
+                                                    <a> Details </a>
+                                                    |
+                                                    <a onclick="onRowClickDelete('row3')"> Delete </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                     </div>
-                    <div id="change" class="collapse form-group input-login">
-                        <h2>Thay đổi thông tin</h2>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input type="text" class="form-control" id="fullname-change" placeholder="Họ và tên"
-                                required="required">
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input type="text" class="form-control" id="nickname-change" placeholder="Bút danh"
-                                required="required">
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
-                            <input type="tel" class="form-control" id="address-change" placeholder="Ngày sinh" required="required">
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input type="email" class="form-control" id="email-change" placeholder="Địa chỉ email"
-                                required="required">
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                            <input type="tel" class="form-control" id="phone-number-change" placeholder="Số điện thoại"
-                                required="required">
-                        </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary">Cập nhật</button>
                     </div>
-                </div>
             </div>
 
 
@@ -267,16 +290,10 @@
             <!--Footer end -->
             <!--Core JavaScript file  -->
             <script src="../assets/js/jquery-1.10.2.js"></script>
-            <!--bootstrap JavaScript file  -->
-            <script src="../assets/js/bootstrap.js"></script>
-            <!--Slider JavaScript file  -->
-            <script src="../assets/ItemSlider/js/modernizr.custom.63321.js"></script>
-            <script src="../assets/ItemSlider/js/jquery.catslider.js"></script>
-            <script>
-                $(function () {
-                    $('#mi-slider').catslider();
-                });
-            </script>
+            <script src="../assets/js/table.js"></script>
+        <!--bootstrap JavaScript file  -->
+        <script src="../assets/js/bootstrap.js"></script>
+        <script src="../assets/js/effect.js"></script>
 </body>
 
 </html>

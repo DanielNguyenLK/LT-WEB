@@ -13,12 +13,9 @@
     <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
     <!--GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!--Slide Show Css -->
-    <link href="../assets/ItemSlider/css/main-style.css" rel="stylesheet" />
     <!-- custom CSS here -->
     <link href="../assets/css/style.css" rel="stylesheet" />
-    <!-- define css here. new create file -->
-    <link href="../assets/css/define-style.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -42,23 +39,21 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- <li><a href="gio-hang.html">Giỏ hàng</a></li> -->
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tài khoản<b class="caret"></b></a>
+                        <a  class="dropdown-toggle" data-toggle="dropdown">Tài khoản<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#"><strong>Phân hệ độc giả</strong></a></li>
-                            <li><a href="../phan he phong vien/cap-nhat-thong-tin-phong-vien.html"><strong>Phân hệ
-                                        phóng viên</strong></a></li>
-                            <li><a href="../phan he bien tap vien/cap-nhat-thong-tin-bien-tap-vien.html"><strong>Phân
-                                        hệ biên tập viên</strong></a></li>
-                            <li><a href="#"><strong>Phân hệ administrator</strong></a></li>
+                            <li><a href="../phan he doc gia/cap-nhat-thong-tin-doc-gia.html"><strong>Phân hệ độc giả</strong></a></li>
+                            <li><a href="../phan he phong vien/cap-nhat-thong-tin-phong-vien.html"><strong>Phân hệ phóng viên</strong></a></li>
+                            <li><a href="../phan he bien tap vien/cap-nhat-thong-tin-bien-tap-vien.html"><strong>Phân hệ biên tập viên</strong></a></li>
+                            <li><a href="../phan he admin/cap-nhat-thong-tin-admin.html"><strong>Phân hệ administrator</strong></a></li>
                             <li><a href="../cap-nhat-thong-tin.html"><strong>Cập nhật thông tin</strong></a></li>
-                            <li><a href="../doi-mat-khau.html"><strong>Đổi mật khẩu</strong></a></li>
+                            <li><a href="../    doi-mat-khau.html"><strong>Đổi mật khẩu</strong></a></li>
                             <li class="divider"></li>
-                            <li><a href="../dang-nhap.html"><strong>Đăng xuất</strong></a></li>
+                            <li><a href="dang-nhap.html"><strong>Đăng xuất</strong></a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hỗ trợ <b class="caret"></b></a>
+                        <a  class="dropdown-toggle" data-toggle="dropdown">Hỗ trợ <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><strong>Điện thoại: </strong>033-353-8585</a></li>
                             <li><a href="#"><strong>eMail: </strong>thebeast@businessonline.com</a></li>
@@ -140,49 +135,319 @@
             <!-- /.col -->
 
             <div class="col-md-9">
-                <!--div change info-->
+                <!--Quản lý category-->
                 <div>
-                    <div class="card">
-                        <img src="../assets/img/profile.png" alt="avatar" style="width:100%">
-                        <h1><Strong>Nguyễn Khánh Hòa</Strong></h1>
-                        <h3><Strong>Admin</Strong></h3>
-                        <p>CMND: 999999999</p>
-                        <p>Địa chỉ: TPHCM</p>
-                        <p>Số điện thoại: 111111111111</p>
-                        <p>Email: thebeast@businessonline.com</p>
-                        <p><button class="change-info" data-toggle="collapse" data-target="#change">Thay đổi thông tin</button></p>
-                    </div>
-                    <div id="change" class="collapse form-group input-login">
-                        <h2>Thay đổi thông tin</h2>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input type="text" class="form-control" id="fullname-change" placeholder="Họ và tên"
-                                required="required">
+                    <h2>Quản lý Category</h2> <hr>
+                    <div class="table100 ver3">
+                            <table data-vertable="ver3">
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="column100 column1" data-column="column1">Name</th>
+                                        <th class="column100 column2" data-column="column2">Content</th>
+                                        <th class="column100 column3" data-column="column3">Image</th>
+                                        <th class="column100 column4" data-column="column4">Date</th>
+                                        <th class="column100 column5" data-column="column5">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row100" id="row11">
+                                        <td class="column100 column1" data-column="column1">Dak Lak cần nâng cao giá trị hạt cafe</td>
+                                        <td class="column100 column2" data-column="column2">Kinh doanh, Nông sản</td>
+                                        <td class="column100 column3" data-column="column3">Khanh Nguyen</td>
+                                        <td class="column100 column4" data-column="column4">2019-01-08</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a  onclick="onRowClickDelete('row11')"> Delete </a>
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="row100" id="row12">
+                                        <td class="column100 column1" data-column="column1">Giá cao su xuất khẩu vẫn ở mức thấp</td>
+                                        <td class="column100 column2" data-column="column2">Kinh doanh, Nông sản</td>
+                                        <td class="column100 column3" data-column="column3">Khanh Nguyen</td>
+                                        <td class="column100 column4" data-column="column4">2019-04-10</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a onclick="onRowClickDelete('row12')"> Delete </a>
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="row100" id="row13">
+                                        <td class="column100 column1" data-column="column1">Vì sao cua huỳnh đế bán gần 10 triệu đồng/con?</td>
+                                        <td class="column100 column2" data-column="column2">Kinh doanh, Hải sản</td>
+                                        <td class="column100 column3" data-column="column3">Van Khanh</td>
+                                        <td class="column100 column4" data-column="column4">2018-7-30</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a onclick="onRowClickDelete('row13')"> Delete </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input type="email" class="form-control" id="email-change" placeholder="Địa chỉ email"
-                                required="required">
+                </div>
+                <br>
+                <br>
+                <!--Quản lý tags-->
+                <div>
+                    <h2>Quản lý tags</h2> <hr>
+                    <div class="table100 ver3">
+                            <table data-vertable="ver3">
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="column100 column1" data-column="column1">Name</th>
+                                        <th class="column100 column2" data-column="column2">Content</th>
+                                        <th class="column100 column3" data-column="column3">Image</th>
+                                        <th class="column100 column4" data-column="column4">Date</th>
+                                        <th class="column100 column5" data-column="column5">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row100" id="tag1">
+                                        <td class="column100 column1" data-column="column1">Dak Lak cần nâng cao giá trị hạt cafe</td>
+                                        <td class="column100 column2" data-column="column2">Kinh doanh, Nông sản</td>
+                                        <td class="column100 column3" data-column="column3">Khanh Nguyen</td>
+                                        <td class="column100 column4" data-column="column4">2019-01-08</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a  onclick="onRowClickDelete('tag1')"> Delete </a>
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="row100" id="tag2">
+                                        <td class="column100 column1" data-column="column1">Giá cao su xuất khẩu vẫn ở mức thấp</td>
+                                        <td class="column100 column2" data-column="column2">Kinh doanh, Nông sản</td>
+                                        <td class="column100 column3" data-column="column3">Khanh Nguyen</td>
+                                        <td class="column100 column4" data-column="column4">2019-04-10</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a onclick="onRowClickDelete('tag2')"> Delete </a>
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="row100" id="tag3">
+                                        <td class="column100 column1" data-column="column1">Vì sao cua huỳnh đế bán gần 10 triệu đồng/con?</td>
+                                        <td class="column100 column2" data-column="column2">Kinh doanh, Hải sản</td>
+                                        <td class="column100 column3" data-column="column3">Van Khanh</td>
+                                        <td class="column100 column4" data-column="column4">2018-7-30</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a onclick="onRowClickDelete('tag3')"> Delete </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                            <input type="tel" class="form-control" id="phone-number-change" placeholder="Số điện thoại"
-                                required="required">
+                </div>
+                <br>
+                <br>
+                <!-- Quản lý bài viêt -->
+                <div>
+                        <h2>Quản lý Bài Viết</h2> <hr>
+                        <div class="table100 ver3">
+                                <table data-vertable="ver3">
+                                    <thead>
+                                        <tr class="row100 head">
+                                            <th class="column100 column1" data-column="column1">Title</th>
+                                            <th class="column100 column2" data-column="column2">Tag</th>
+                                            <th class="column100 column3" data-column="column3">Author</th>
+                                            <th class="column100 column4" data-column="column4">Date</th>
+                                            <th class="column100 column5" data-column="column5">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row100" id="row1">
+                                            <td class="column100 column1" data-column="column1">Dak Lak cần nâng cao giá trị hạt cafe</td>
+                                            <td class="column100 column2" data-column="column2">Kinh doanh, Nông sản</td>
+                                            <td class="column100 column3" data-column="column3">Khanh Nguyen</td>
+                                            <td class="column100 column4" data-column="column4">2019-01-08</td>
+                                            <td class="column100 column5" data-column="column5">
+                                                <a> Edit </a>
+                                                |
+                                                <a> Details </a>
+                                                |
+                                                <a  onclick="onRowClickDelete('row1')"> Delete </a>
+                                            </td>
+                                        </tr>
+            
+                                        <tr class="row100" id="row2">
+                                            <td class="column100 column1" data-column="column1">Giá cao su xuất khẩu vẫn ở mức thấp</td>
+                                            <td class="column100 column2" data-column="column2">Kinh doanh, Nông sản</td>
+                                            <td class="column100 column3" data-column="column3">Khanh Nguyen</td>
+                                            <td class="column100 column4" data-column="column4">2019-04-10</td>
+                                            <td class="column100 column5" data-column="column5">
+                                                <a> Edit </a>
+                                                |
+                                                <a> Details </a>
+                                                |
+                                                <a onclick="onRowClickDelete('row2')"> Delete </a>
+                                            </td>
+                                        </tr>
+            
+                                        <tr class="row100" id="row3">
+                                            <td class="column100 column1" data-column="column1">Vì sao cua huỳnh đế bán gần 10 triệu đồng/con?</td>
+                                            <td class="column100 column2" data-column="column2">Kinh doanh, Hải sản</td>
+                                            <td class="column100 column3" data-column="column3">Van Khanh</td>
+                                            <td class="column100 column4" data-column="column4">2018-7-30</td>
+                                            <td class="column100 column5" data-column="column5">
+                                                <a> Edit </a>
+                                                |
+                                                <a> Details </a>
+                                                |
+                                                <a onclick="onRowClickDelete('row3')"> Delete </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                </div>
+                <br>
+                <br>
+                <!-- Quản lý người dùng -->
+                <div>
+                    <h2>Quản lý độc giả</h2> <hr>
+                    <div class="table100 ver3">
+                            <table data-vertable="ver3">
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="column100 column1" data-column="column1">Name</th>
+                                        <th class="column100 column2" data-column="column2">Role</th>
+                                        <th class="column100 column3" data-column="column3">Sex</th>
+                                        <th class="column100 column4" data-column="column4">Date</th>
+                                        <th class="column100 column5" data-column="column5">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row100" id="user1">
+                                        <td class="column100 column1" data-column="column1">Khánh Nguyễn</td>
+                                        <td class="column100 column2" data-column="column2">Guest</td>
+                                        <td class="column100 column3" data-column="column3">Male</td>
+                                        <td class="column100 column4" data-column="column4">2019-01-08</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a  onclick="onRowClickDelete('user1')"> Delete </a>
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="row100" id="user2">
+                                        <td class="column100 column1" data-column="column1">Nam Đặng</td>
+                                        <td class="column100 column2" data-column="column2">Guest</td>
+                                        <td class="column100 column3" data-column="column3">Gay</td>
+                                        <td class="column100 column4" data-column="column4">2019-04-10</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a onclick="onRowClickDelete('user2')"> Delete </a>
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="row100" id="user3">
+                                        <td class="column100 column1" data-column="column1">Hòa Nguyễn</td>
+                                        <td class="column100 column2" data-column="column2">Guest</td>
+                                        <td class="column100 column3" data-column="column3">Gay</td>
+                                        <td class="column100 column4" data-column="column4">2018-7-30</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a onclick="onRowClickDelete('user3')"> Delete </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
-                            <input type="tel" class="form-control" id="address-change" placeholder="Địa chỉ" required="required">
+                </div>
+                <br>
+                <br>
+                <!-- Quản lý tác giả -->
+                <div>
+                    <h2>Quản lý tác giả</h2> <hr>
+                    <div class="table100 ver3">
+                            <table data-vertable="ver3">
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="column100 column1" data-column="column1">Name</th>
+                                        <th class="column100 column2" data-column="column2">Role</th>
+                                        <th class="column100 column3" data-column="column3">Sex</th>
+                                        <th class="column100 column4" data-column="column4">Posts</th>
+                                        <th class="column100 column5" data-column="column5">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row100" id="userz1">
+                                        <td class="column100 column1" data-column="column1">Khánh</td>
+                                        <td class="column100 column2" data-column="column2">User</td>
+                                        <td class="column100 column3" data-column="column3">Male</td>
+                                        <td class="column100 column4" data-column="column4">15</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a  onclick="onRowClickDelete('userz1')"> Delete </a>
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="row100" id="userz2">
+                                        <td class="column100 column1" data-column="column1">Nam</td>
+                                        <td class="column100 column2" data-column="column2">User</td>
+                                        <td class="column100 column3" data-column="column3">Gay</td>
+                                        <td class="column100 column4" data-column="column4">13</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a onclick="onRowClickDelete('userz2')"> Delete </a>
+                                        </td>
+                                    </tr>
+        
+                                    <tr class="row100" id="userz3">
+                                        <td class="column100 column1" data-column="column1">Hòa</td>
+                                        <td class="column100 column2" data-column="column2">Guest</td>
+                                        <td class="column100 column3" data-column="column3">Gay</td>
+                                        <td class="column100 column4" data-column="column4">10</td>
+                                        <td class="column100 column5" data-column="column5">
+                                            <a> Edit </a>
+                                            |
+                                            <a> Details </a>
+                                            |
+                                            <a onclick="onRowClickDelete('userz3')"> Delete </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary">Cập nhật</button>
-                    </div>
                 </div>
             </div>
 
-
             <!--footer-->
             <!-- /.container -->
-            <div class="col-md-12 download-app-box text-center">
+            <div class="col-md-12 download-app-box text-center footer-banner">
                 BusinessOnline.Com - Luôn cập nhật tin tức mới nhất.
             </div>
 
@@ -256,16 +521,10 @@
             <!--Footer end -->
             <!--Core JavaScript file  -->
             <script src="../assets/js/jquery-1.10.2.js"></script>
-            <!--bootstrap JavaScript file  -->
-            <script src="../assets/js/bootstrap.js"></script>
-            <!--Slider JavaScript file  -->
-            <script src="../assets/ItemSlider/js/modernizr.custom.63321.js"></script>
-            <script src="../assets/ItemSlider/js/jquery.catslider.js"></script>
-            <script>
-                $(function () {
-                    $('#mi-slider').catslider();
-                });
-            </script>
+            <script src="../assets/js/table.js"></script>
+        <!--bootstrap JavaScript file  -->
+        <script src="../assets/js/bootstrap.js"></script>
+        <script src="../assets/js/effect.js"></script>
 </body>
 
 </html>
