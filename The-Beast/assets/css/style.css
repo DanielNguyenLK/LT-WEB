@@ -21,12 +21,43 @@ body {
           font-family:'Open Sans', sans-serif;
     font-size:14px;
 }
-
+/*Chu nhap nhay */
+blink, .blink {
+    -webkit-animation: blink 1s step-end infinite;
+    -moz-animation: blink 1s step-end infinite;
+    -o-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+@-webkit-keyframes blink { 67% { opacity: 0 }}
+@-moz-keyframes blink {  67% { opacity: 0 }}
+@-o-keyframes blink {  67% { opacity: 0 }}
+@keyframes blink {  67% { opacity: 0 }}
 
 .text-center {
     /* text-align:center; */
 }
+/*Tạo chuyển động thanh quảng cáo*/
+@keyframes move
+{
+    from {left:-400px}to{left:400px } ;
 
+}
+#move1
+{
+   
+    animation-name: move;
+    animation-duration: 4s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(.47,.86,.92,.19);
+    position: relative;
+    
+        
+}
+/*Hiệu ứng di chuột*/
+a:hover {
+    color: #ff0000;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family:'Open Sans', sans-serif;

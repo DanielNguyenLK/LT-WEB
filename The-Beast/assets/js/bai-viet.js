@@ -12,8 +12,23 @@ var baiViet1 = {
             ],
     tag: ["Kinh doanh", "Nông sản"]
 };
+var baiViet2 = {
+    url: "Dak-Lak-can-nang-cao-gia-tri-hat-cafe",
+    title: "Dak Lak cần nâng cao giá trị hạt cafe",
+    date: "2019-01-08",
+    content: [
+                "img@:@assets/img/cafe.png",
+                "strong@:@Xuất khẩu cao su Việt Nam đạt 71 nghìn tấn, giá trị đạt 93 triệu USD", // mooix phan tu nay la 1 block. tach z sai r. cach nay uong duong vs doan van ak
+                "Cà phê là mặt hàng nông sản chủ lực",
+                 "mang về ngoại tệ lớn cho tỉnh",
+                 "nhưng lượng cà phê chế biến sâu vẫn còn khiêm tốn.", 
+                 "Với những lợi thế sẵn có thì việc thúc đẩy công nghiệp chế biến sẽ nâng cao giá trị",
+                 "khẳng định vị thế cho mặt hàng này",
+            ],
+    tag: ["Kinh doanh", "Nông sản"]
+};
 
-var listBaiViet = [baiViet1];
+var listBaiViet = [baiViet1,baiViet2];
 window.onload = function() {
     var text = window.location.hash.substring(1)
     listBaiViet.forEach(element => {
