@@ -172,7 +172,9 @@ var baiViet10 = {
 
 var listBaiViet = [baiViet1, baiViet2, baiViet3,baiViet4,baiViet5,baiViet6,baiViet7,baiViet8,baiViet9,baiViet10];
 window.onload = function () {
-    var text = window.location.hash.substring(1)
+    var text = window.location.hash.substring(1);
+    var isLoaded = false;
+    var baiVietLienQuan = [];
     listBaiViet.forEach(element => {
         if (element.url === text) {
             // display content bai viet
@@ -197,6 +199,51 @@ window.onload = function () {
                     content.innerHTML += `<p>` + item + `</p>`;
                 }
             });
+            isLoaded = true;
+            isBreak = false;
+            for (let a = 0; a < element.tag.length; a++) {
+                for (let b = 0; b < listBaiViet.length; b++) {
+                    for (let c = 0; c < listBaiViet[b].tag.length; c++) {
+                        if (listBaiViet[b].tag[c] === element.tag[a]) {
+                            var isPush = true;
+                            if (listBaiViet[b].title === element.title) isPush = false;
+                            for (let d = 0; d < baiVietLienQuan.length; d++) {
+                                if (listBaiViet[b].title === baiVietLienQuan[d].title) 
+                                isPush = false;                         
+                            }
+                            if (isPush) {
+                                baiVietLienQuan.push(listBaiViet[b]);
+                                break;
+                            }
+                        }
+                    }
+                    if (baiVietLienQuan.length === 5) {
+                        isBreak = true;
+                        break;
+                    }
+                }
+                if (isBreak) break;
+            }
+            baiVietLienQuan.forEach(a => {
+                var baiviet = document.getElementById("bai-viet-lien-quan");
+                var tempDiv = document.createElement('div');
+                // <dt class="extra-dt" style="background-image: url('assets/img/cao-su.png');">
+                //         <div class="title-extra">
+                //             <a class="extra-text" href="#"> Itsddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasddaem 1 </a>
+                //         </div>
+                //     </dt>
+                tempDiv.className = "extra-dt";
+                var img = a.content[0].split("@:@");
+                tempDiv.style.backgroundImage = "url("+ img[1] +")";
+                tempDiv.innerHTML += `<div class="title-extra">
+                                         <a class="extra-text" href="#">`+ a.title +`</a>
+                                      </div>`
+                baiviet.appendChild(tempDiv);
+            });
         }
     });
+    if (!isLoaded) {
+        var titles = document.getElementById("title-bai-viet");
+        titles.innerText = `Bài viết sẽ được cập nhật sau`;
+    }
 };
