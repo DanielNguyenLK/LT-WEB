@@ -4614,6 +4614,10 @@ a.thumbnail.active {
   padding-left: 0;
   list-style: none;
 }
+.media-icon{
+  width: 50px;
+  height:50px;
+}
 .list-group {
   padding-left: 0;
   margin-bottom: 20px;
@@ -5795,7 +5799,7 @@ button.close {
 
 .img-main{
   display: flex;
-  max-width: 60%;
+  max-width: 100%;
   min-width: 20%;
   max-height: 20%;
   min-height: 7%; 
