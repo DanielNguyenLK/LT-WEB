@@ -1,33 +1,33 @@
 var slideIndex = 0;
 var baiViet1 = {
-  url: "gia-cua-bien-ca-mau-tang-manh",
-  image: "assets/img/cua-ca-mau-hinh-1.png",
-  header: "Giá cua biển Cà Mau tăng mạnh",
-  displayText: "Ghi nhận của PV Báo NNVN tại huyện Cái Nước (Cà Mau), ở thời điểm hiện tại cua gạch, cua cốm (cua lột) có giá dao động từ 550 – 600 ngàn đồng/kg, tăng từ 120 – 150 ngàn đồng/kg so với tháng trước; cua y có giá khoảng 350 – 370 ngàn đồng/kg; cua xô khoảng 100 ngàn đồng/kg",
+  url: "gia-cao-su-xuat-khau-van-o-muc-thap-nhat",
+  image: "assets/img/cao-su.png",
+  header: "Giá cao su xuất khẩu vẫn ở mức thấp",
+  displayText: "Theo báo cáo của Trung tâm tin học & Thống kê Bộ NN&PTNT, khối lượng xuất khẩu cao su tháng 2 năm 2019 của Việt nam ước đạt 71 nghìn tấn với giá trị đạt 93 triệu USD. Với ước tính này, khối lượng xuất khẩu cao su 2 tháng đầu năm 2019 đạt 228 nghìn tấn và 293 triệu USD, tăng 22,4% về khối lượng và tăng 6,8% về giá trị so với cùng kỳ năm 2018.",
 }
 var baiViet2 = {
-  url: "nhung-ty-phu-chan-dat-nho-trong-thanh-long",
-  image: "assets/img/TL-hinh-6.png",
-  header: "Những tỷ phú 'chân đất' nhờ trồng thanh long",
-  displayText: "Từ một xã nghèo cái ăn không đủ, người dân phải bỏ quê đi tha phương cầu thực thì đến nay xã Tân Thuận, huyện Hàm Thuận Nam, Bình Thuận đang là nơi có nhiều tỷ phú nhờ trồng cây thanh long . Xã Tân Thuận cách trung tâm huyện Hàm Thuận Nam chừng 5km theo đường chim bay. Nép mình sau núi Tà Cú, làng quê này xen giữa những cánh đồng thanh long bạt ngàn với những nóc nhà xanh đỏ hiện đại. Ngay khi bước chân vào đầu thôn Hiệp Nghĩa, chúng tôi bị choáng ngợp bởi những căn nhà mái Thái, những ngôi biệt thự đồ sộ lộng lẫy nằm dọc đường vào trung tâm xã."
+  url: "Dak-Lak-can-nang-cao-gia-tri-hat-cafe",
+  image: "assets/img/cafe.png",
+  header: "Dak Lak cần nâng cao giá trị hạt cafe",
+  displayText: "Theo Cục Chế biến và Phát triển thị trường nông sản Bộ Nông nghiệp và Phát triển nông thôn, diện tích cà phê cả nước đạt khoảng 664 nghìn héc-ta. Cà phê Việt Nam hiện được xuất sang 80 quốc gia và vùng lãnh thổ trên thế giới với kim ngạch xuất khẩu trên 3 tỷ USD, chiếm 14% thị phần và 10,4% giá trị cà phê nhân xuất khẩu toàn cầu. Mặc dù được đánh giá là “cây tỷ đô” có kim ngạch xuất khẩu cao trong nhóm hàng nông sản của Việt Nam, nhưng tốc độ tăng trưởng kim ngạch chỉ ở mức bình quân 6,57%; giá trị hạt cà phê Việt Nam chưa được đánh giá cao. Nguyên nhân chủ yếu do cà phê Việt Nam chịu nhiều biến động của thị trường cà phê thế giới, cơ cấu sản phẩm cà phê có giá trị gia tăng cao vẫn còn thấp, chỉ 7% cà phê Việt Nam được chế biến sâu, xuất khẩu cà phê nhân chiếm tỷ trọng lớn 93%."
 }
 var baiViet3 = {
-  url: "",
-  image: "assets/img/vai-hinh-5.png",
-  header: "Mùa đông ấm, vải thiều lại 'tịt hoa'",
-  displayText: "Diễn biến thời tiết mùa đông 2018-2019 ấm hơn mọi năm khiến nhiều diện tích vải thiều tại các vựa lớn như Bắc Giang, Hải Dương có tỉ lệ ra hoa thấp. Hiện tượng vải thiều mất mùa do “tịt hoa” này lại diễn ra tương tự như niên vụ năm 2016-2017."
+  url: "scl-1",
+  image: "assets/img/lua-gao-hinh2.png",
+  header: "Giá lúa gạo ở các tỉnh đồng bằng sông Cửu Long tăng mạnh",
+  displayText: "Vụ Đông Xuân năm 2018-2019 ở Khu vực Đồng bằng sông Cửu Long bắt đầu vào vụ thu hoạch, nhưng từ sau Tết Nguyên đán đến ngày 20/2, hầu hết diện tích lúa của nông dân vùng Đồng bằng sông Cửu Long vẫn “nằm im,” chưa được thương lái, doanh nghiệp thu mua.Nhiều nơi nông dân sốt ruột vì lúa đến độ chín rộ, để lâu sẽ bị rơi rụng, khó thu hoạch, nguy cơ thua lỗ nặng trước mắt."
 }
 var baiViet4 = {
-  url: "vi-sao-cua-huynh-de-ban-gan-10-trieu-dong-con",
-  image: "assets/img/cua-hd-hinh-5.png",
-  header: "Vì sao cua huỳnh đế bán gần 10 triệu đồng/con?",
-  displayText: "Nếu phải lựa chọn ra danh sách những món hải sản đắt đỏ nhất, cua hoàng đế (có nơi gọi là huỳnh đế) chắc chắn phải có một chỗ trong đó, thậm chí nằm trên top đầu. Cua huỳnh đế là gì và cua hoàng đế bổ dưỡng ra sao mà cực đắt. Được biết đến là một loại hải sản thơm ngon, cua hoàng đế có hình dạng lạ mắt, chắc thịt dù hơn 1 triệu/kg nhưng vẫn được mọi người ưa chuộng và tìm mua."
+  url: "vrg-1",
+  image: "assets/img/cao-su-hinh6.png",
+  header: "Nghiêm túc thực hiện chế biến, tiêu thụ sản phẩm cao su thương hiệu VRG",
+  displayText: "Theo đó, năm 2018 là năm đầu tiên VRG triển khai sản xuất sản phẩm cao su thương hiệu VRG, với nhãn hàng hóa mới, có chất lượng đạt yêu cầu TCCS 112:2017 của VRG. VRG khuyến khích các công ty thành viên chủ động trong việc sản xuất và tiêu thụ, nỗ lực cùng với Tập đoàn quảng bá sản phẩm cao su VRG, quảng bá thương hiệu cao su của VRG."
 }
 var baiViet5 = {
-  url: "nam-2019-xuat-khau-tom-uoc-dat-4-ty-usd",
-  image: "assets/img/tom-su-hinh-2.png",
-  header: "Năm 2019, xuất khẩu tôm ước đạt 4 tỷ USD",
-  displayText: "Tổng cục Thủy sản (Bộ NN-PTNT) vừa cho biết, năm 2019, ngành thủy sản đặt mục tiêu có tổng kim ngạch xuất khẩu tôm đạt 4 tỷ USD. Theo ông Trần Đình Luân, Phó Tổng cục trưởng Tổng cục Thủy sản, để đảm bảo cho mục tiêu này, ngay từ đầu năm, ngành thủy sản xác định diện tích nuôi tôm sú năm 2019 duy trì khoảng 620.000ha, với sản lượng khoảng 330.000 tấn."
+  url: "san-luong-tieu-2019",
+  image: "assets/img/tieu-hinh-2.png",
+  header: "Năm 2019, sản lượng hạt tiêu sẽ đạt khoảng 200.000 tấn",
+  displayText: "Theo Cục Xuất nhập khẩu (Bộ Công Thương), giá hạt tiêu tại khu vực Tây Nguyên và miền Nam sau kỳ nghỉ Tết Nguyên đán ổn định ở mức 46.000 đồng/kg - mức giá thấp nhất trong vòng gần 10 năm trở lại đây."
 }
 listBaiViet = [baiViet1, baiViet2, baiViet3, baiViet4, baiViet5];
 function nextImage() {
