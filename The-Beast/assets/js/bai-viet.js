@@ -171,7 +171,7 @@ var baiViet10 = {
 
 
 var listBaiViet = [baiViet1, baiViet2, baiViet3,baiViet4,baiViet5,baiViet6,baiViet7,baiViet8,baiViet9,baiViet10];
-window.onload = function () {
+function updateBaiViet() {
     var text = window.location.hash.substring(1);
     var isLoaded = false;
     var baiVietLienQuan = [];
@@ -217,7 +217,7 @@ window.onload = function () {
                             }
                         }
                     }
-                    if (baiVietLienQuan.length === 5) {
+                    if (baiVietLienQuan.length === 7) {
                         isBreak = true;
                         break;
                     }
@@ -227,16 +227,11 @@ window.onload = function () {
             baiVietLienQuan.forEach(a => {
                 var baiviet = document.getElementById("bai-viet-lien-quan");
                 var tempDiv = document.createElement('div');
-                // <dt class="extra-dt" style="background-image: url('assets/img/cao-su.png');">
-                //         <div class="title-extra">
-                //             <a class="extra-text" href="#"> Itsddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasddaem 1 </a>
-                //         </div>
-                //     </dt>
                 tempDiv.className = "extra-dt";
                 var img = a.content[0].split("@:@");
                 tempDiv.style.backgroundImage = "url("+ img[1] +")";
                 tempDiv.innerHTML += `<div class="title-extra">
-                                         <a class="extra-text" href="#">`+ a.title +`</a>
+                                         <a class="extra-text" href="bai-viet-chi-tiet.html#`+ a.url + `">`+ a.title +`</a>
                                       </div>`
                 baiviet.appendChild(tempDiv);
             });
@@ -246,4 +241,11 @@ window.onload = function () {
         var titles = document.getElementById("title-bai-viet");
         titles.innerText = `Bài viết sẽ được cập nhật sau`;
     }
+}
+window.onload = function () {
+    updateBaiViet();
 };
+window.onhashchange = function() {
+    updateBaiViet();
+    location.reload();
+}
